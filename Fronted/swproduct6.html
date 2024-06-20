@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductsDetails</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="style.css">
+<style>
+    .small-img-group
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .small-img-col
+    {
+        flex-basis: 24%;
+        cursor: pointer;
+    }
+    .sproduct input{
+        width: 45px;
+        height: 35px;
+        padding-left: 10px;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .sproduct input:focus{
+        outline: none;
+    }
+    .buy-btn
+    {
+        border: none;
+        text-align:  center;
+        color: white;
+        background-color:#fb774b  ;
+        padding: 10px;
+        opacity: 1;
+        transition: 0.3s all;
+       
+    }
+    .product img{
+        width: 65%;
+        height: 250px;
+        box-sizing: border-box;
+        object-fit: cover;
+    }
+</style>
+
+</head>
+<body> 
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary py-3 ">
+        <div class="container">
+            <!-- logo -->
+            <img src="./logo.jpeg" alt="" style="height: 45px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Smart Watches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Clock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="material-symbols-outlined" style="padding: 2px;">
+                            search
+                        </span>
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </li>
+
+
+            </div>
+        </div>
+    </nav>
+    <section class="container sproduct my-5 py-5">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-96 pb-2" src="sm6.png" id="MainImg" alt="">
+                <h4>Color :</h4>
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="images/sm6.png" width="93%" height="110px" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/sw36.png" width="90%"  height="110px" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/37.png" width="93%"   height="110px" class="small-img" alt="">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="images/sw38.png" width="90%"   height="110px" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12"> 
+                <h6>Smart Watches</h6>
+                <h3 class="py-3">Fastrack Watch</h3>
+                <h3 class="py-4">Unisex Watch</h3>
+                <h2>$3,495</h2>
+                <input type="number" value="1">
+                <button class="buy-btn">Add To Cart</button>
+                <h4 class="mt-5 mb-5">Product Details</h4>
+                <span>
+                    Fastrack Rogue with 1.38" UltraVU HD Display Sporty Smartwatch Functional Crown with AI Coach and Auto Multisport Recognition 550 Nits Brightness, SingleSync BT Calling with Advanced Chipset, Voice Assistant, Multiple Watchfaces,
+                    SOS, Multiple Sports Modes with Auto Multisport Recognition
+                </span>
+
+            </div>
+        </div>
+    </section>
+    <section id="featured" class="my-5 pb-4">
+
+        <div class="container text-center mt-5 py-5">
+        
+            <h3>Related Product</h2>
+            <hr class="mx-auto">
+           
+        </div>
+        <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/sm1.png" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p=name">Titan Smart Watch</h5>
+                <h4 class="p-price">$4,995</h4>
+                <button class="buy-btn"> Buy Now </button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/sm2.png" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    
+                </div>
+                <h5 class="p=name">Fastrack Smart Watch</h5>
+                <h4 class="p-price">$3,995</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/sm3.png" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                   
+                </div>
+                <h5 class="p=name">Fastrack Invoke Pro Smart Watch</h5>
+                <h4 class="p-price">$4,495</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="images/sm4.png" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                   
+                </div>
+                <h5 class="p=name">Fastrack Reflex Pro Smart Watch</h5>
+                <h4 class="p-price">$2,995</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+    
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+    <script>
+        var  MainImg =document.getElementById('MainImg');
+        var smallimg= document.getElementsByClassName('small-img');
+        smallimg[0].onclick = function(){
+            MainImg.src =smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src =smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src =smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src =smallimg[3].src;
+        }
+    </script>
+
+</body> 
+</html>
